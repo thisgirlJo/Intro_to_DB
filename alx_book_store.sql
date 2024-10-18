@@ -13,7 +13,7 @@ CREATE DATABASE IF NOT EXISTS alx_book_store;
     );
 
     CREATE TABLE Customers(
-        customer_id NT PRIMARY KEY NOT NULL,
+        customer_id INT PRIMARY KEY NOT NULL,
         customer_name VARCHAR(215) NOT NULL,
         email VARCHAR(215) NOT NULL,
         address TEXT NOT NULL,
