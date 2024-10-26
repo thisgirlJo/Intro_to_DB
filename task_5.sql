@@ -10,6 +10,6 @@ mycursor = mydb.cursor()
 
 sql = "INSERT INTO customers(customer_id, customer_name, email, address) VALUES(%d, %s, %s, %s)"
 
-val = (1, "Cole Baidoo", "cbaidoo@sandtech.com", "123 Hapiness Ave")
+val = (1, "Cole Baidoo", "cbaidoo@sandtech.com", "123 Hapiness Ave.")
 mycursor.execute(sql, val)
 mydb.commit()
