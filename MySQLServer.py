@@ -11,6 +11,8 @@ try:
     while mydb == False:
         mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
         print("Database 'alx_book_store' created successfully!")
+except mysql.connector.Error:
+    print("Error!!!")
 else:
     print("Database Exists!")
 mycursor.close()
