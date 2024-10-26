@@ -7,9 +7,10 @@ mydb = mysql.connector.connect(
     database="alx_book_store"
     )
 mycursor = mydb.cursor()
-while mydb == False:
-    mycursor.execute("CREATE DATABASE alx_book_store")
-    print("Database 'alx_book_store' created successfully!")
+try:
+    while mydb == False:
+        mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
+        print("Database 'alx_book_store' created successfully!")
 else:
     print("Database Exists!")
 mycursor.close()
