@@ -9,7 +9,7 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
-mycursor.execute("SHOW TABLES")
+mycursor.execute("USE alx_book_store; SHOW TABLES")
 
 for x in mycursor:
   print(x)
